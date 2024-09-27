@@ -1,0 +1,1 @@
+DB_Script klasörü içerisinde LibrarySystem database scriptine ulaşabilirsiniz.
