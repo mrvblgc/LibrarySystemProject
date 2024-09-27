@@ -1,0 +1,14 @@
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Entity\bin\Debug\net8.0\LibrarySystem.Entity.deps.json
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Entity\bin\Debug\net8.0\LibrarySystem.Entity.runtimeconfig.json
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Entity\bin\Debug\net8.0\LibrarySystem.Entity.dll
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Entity\bin\Debug\net8.0\LibrarySystem.Entity.pdb
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Entity\obj\Debug\net8.0\LibrarySystem.Entity.csproj.AssemblyReference.cache
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Entity\obj\Debug\net8.0\LibrarySystem.Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Entity\obj\Debug\net8.0\LibrarySystem.Entity.AssemblyInfoInputs.cache
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Entity\obj\Debug\net8.0\LibrarySystem.Entity.AssemblyInfo.cs
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Entity\obj\Debug\net8.0\LibrarySystem.Entity.csproj.CoreCompileInputs.cache
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Entity\obj\Debug\net8.0\LibrarySystem.Entity.dll
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Entity\obj\Debug\net8.0\refint\LibrarySystem.Entity.dll
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Entity\obj\Debug\net8.0\LibrarySystem.Entity.pdb
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Entity\obj\Debug\net8.0\LibrarySystem.Entity.genruntimeconfig.cache
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Entity\obj\Debug\net8.0\ref\LibrarySystem.Entity.dll

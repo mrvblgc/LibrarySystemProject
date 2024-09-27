@@ -1,0 +1,15 @@
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DTO\bin\Debug\net8.0\LibrarySystem.DTO.deps.json
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DTO\bin\Debug\net8.0\LibrarySystem.DTO.dll
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DTO\bin\Debug\net8.0\LibrarySystem.DTO.pdb
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DTO\bin\Debug\net8.0\LibrarySystem.Entity.dll
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DTO\bin\Debug\net8.0\LibrarySystem.Entity.pdb
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DTO\obj\Debug\net8.0\LibrarySystem.DTO.csproj.AssemblyReference.cache
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DTO\obj\Debug\net8.0\LibrarySystem.DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DTO\obj\Debug\net8.0\LibrarySystem.DTO.AssemblyInfoInputs.cache
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DTO\obj\Debug\net8.0\LibrarySystem.DTO.AssemblyInfo.cs
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DTO\obj\Debug\net8.0\LibrarySystem.DTO.csproj.CoreCompileInputs.cache
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DTO\obj\Debug\net8.0\LibraryS.409611DB.Up2Date
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DTO\obj\Debug\net8.0\LibrarySystem.DTO.dll
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DTO\obj\Debug\net8.0\refint\LibrarySystem.DTO.dll
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DTO\obj\Debug\net8.0\LibrarySystem.DTO.pdb
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DTO\obj\Debug\net8.0\ref\LibrarySystem.DTO.dll

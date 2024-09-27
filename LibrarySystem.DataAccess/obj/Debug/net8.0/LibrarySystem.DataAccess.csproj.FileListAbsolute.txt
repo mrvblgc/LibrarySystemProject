@@ -1,0 +1,17 @@
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DataAccess\obj\Debug\net8.0\LibrarySystem.DataAccess.csproj.AssemblyReference.cache
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DataAccess\obj\Debug\net8.0\LibrarySystem.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DataAccess\obj\Debug\net8.0\LibrarySystem.DataAccess.AssemblyInfoInputs.cache
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DataAccess\obj\Debug\net8.0\LibrarySystem.DataAccess.AssemblyInfo.cs
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DataAccess\obj\Debug\net8.0\LibrarySystem.DataAccess.csproj.CoreCompileInputs.cache
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DataAccess\bin\Debug\net8.0\LibrarySystem.DataAccess.deps.json
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DataAccess\bin\Debug\net8.0\LibrarySystem.DataAccess.runtimeconfig.json
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DataAccess\bin\Debug\net8.0\LibrarySystem.DataAccess.dll
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DataAccess\bin\Debug\net8.0\LibrarySystem.DataAccess.pdb
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DataAccess\bin\Debug\net8.0\LibrarySystem.Entity.dll
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DataAccess\bin\Debug\net8.0\LibrarySystem.Entity.pdb
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DataAccess\obj\Debug\net8.0\LibraryS.C0E16100.Up2Date
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DataAccess\obj\Debug\net8.0\LibrarySystem.DataAccess.dll
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DataAccess\obj\Debug\net8.0\refint\LibrarySystem.DataAccess.dll
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DataAccess\obj\Debug\net8.0\LibrarySystem.DataAccess.pdb
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DataAccess\obj\Debug\net8.0\LibrarySystem.DataAccess.genruntimeconfig.cache
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.DataAccess\obj\Debug\net8.0\ref\LibrarySystem.DataAccess.dll

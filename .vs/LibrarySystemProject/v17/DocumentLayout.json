@@ -1,0 +1,78 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Eren_Perakende_Project\\LibrarySystemProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{935D9811-4FD7-4DDF-90DD-5CE7A60F0B6A}|LibrarySystem.WEBUI\\LibrarySystem.WEBUI.csproj|d:\\eren_perakende_project\\librarysystemproject\\librarysystem.webui\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{935D9811-4FD7-4DDF-90DD-5CE7A60F0B6A}|LibrarySystem.WEBUI\\LibrarySystem.WEBUI.csproj|solutionrelative:librarysystem.webui\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{935D9811-4FD7-4DDF-90DD-5CE7A60F0B6A}|LibrarySystem.WEBUI\\LibrarySystem.WEBUI.csproj|d:\\eren_perakende_project\\librarysystemproject\\librarysystem.webui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{935D9811-4FD7-4DDF-90DD-5CE7A60F0B6A}|LibrarySystem.WEBUI\\LibrarySystem.WEBUI.csproj|solutionrelative:librarysystem.webui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 400,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Eren_Perakende_Project\\LibrarySystemProject\\LibrarySystem.WEBUI\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "LibrarySystem.WEBUI\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Eren_Perakende_Project\\LibrarySystemProject\\LibrarySystem.WEBUI\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "LibrarySystem.WEBUI\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAUwFAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T18:42:50.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Eren_Perakende_Project\\LibrarySystemProject\\LibrarySystem.WEBUI\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "LibrarySystem.WEBUI\\Views\\Home\\Login.cshtml",
+              "ToolTip": "D:\\Eren_Perakende_Project\\LibrarySystemProject\\LibrarySystem.WEBUI\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "LibrarySystem.WEBUI\\Views\\Home\\Login.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T18:39:49.805Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

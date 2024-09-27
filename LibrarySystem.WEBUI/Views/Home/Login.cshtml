@@ -1,0 +1,70 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<link href="~/css/logininfo.css" rel="stylesheet" />
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Giriş Ekranı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>Kütüphane Sistemi</h1>
+        <form class="form-horizontal m-t-30" method="post" action="/Home/Login">
+            <label for="first">Mail Adresi/Kullanıcı Adı</label>
+            <input type="text" id="email" name="Email" placeholder="Mail Adresi/Kullanıcı Adı" required>
+
+            <label for="password">
+                Password:
+            </label>
+            <input type="password" id="password" name="Password" placeholder="Şifre" required>
+
+            <div class="wrap">
+                <button type="submit" onclick="loginFunc()">Giriş Yap</button>
+            </div>
+
+
+            @if (TempData["MessageError"] != null)
+            {
+                <div class="alert alert-success" style="color:red;">
+                    @TempData["MessageError"]
+                </div>
+            }
+        </form>
+        <p><a href="#"style="text-decoration: none;">Hesap Oluştur</a>
+        </p>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function loginFunc() {
+        var user = $("#username").val();
+        var pass = $("#userpassword").val();
+        alert("user " + user);
+        alert("pass " + pass);
+        $.ajax({
+            type: "POST",
+            url: "/Home/Login/",
+            data: { Email: user, Password: pass },
+            success: function (responseData) {
+                if (responseData) {
+
+                    console.log("buraya girdi");
+                }
+            },
+            error: function () {
+                alert("Hata");
+            }
+        });
+    }
+</script>

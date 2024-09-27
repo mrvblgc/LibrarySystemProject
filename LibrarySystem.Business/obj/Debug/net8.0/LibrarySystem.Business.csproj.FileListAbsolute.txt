@@ -1,0 +1,17 @@
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Business\obj\Debug\net8.0\LibrarySystem.Business.csproj.AssemblyReference.cache
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Business\obj\Debug\net8.0\LibrarySystem.Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Business\obj\Debug\net8.0\LibrarySystem.Business.AssemblyInfoInputs.cache
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Business\obj\Debug\net8.0\LibrarySystem.Business.AssemblyInfo.cs
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Business\obj\Debug\net8.0\LibrarySystem.Business.csproj.CoreCompileInputs.cache
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Business\bin\Debug\net8.0\LibrarySystem.Business.deps.json
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Business\bin\Debug\net8.0\LibrarySystem.Business.dll
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Business\bin\Debug\net8.0\LibrarySystem.Business.pdb
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Business\bin\Debug\net8.0\LibrarySystem.DataAccess.dll
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Business\bin\Debug\net8.0\LibrarySystem.Entity.dll
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Business\bin\Debug\net8.0\LibrarySystem.DataAccess.pdb
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Business\bin\Debug\net8.0\LibrarySystem.Entity.pdb
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Business\obj\Debug\net8.0\LibraryS.57FEC90B.Up2Date
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Business\obj\Debug\net8.0\LibrarySystem.Business.dll
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Business\obj\Debug\net8.0\refint\LibrarySystem.Business.dll
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Business\obj\Debug\net8.0\LibrarySystem.Business.pdb
+D:\Eren_Perakende_Project\LibrarySystemProject\LibrarySystem.Business\obj\Debug\net8.0\ref\LibrarySystem.Business.dll

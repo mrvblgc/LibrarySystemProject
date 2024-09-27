@@ -1,0 +1,265 @@
+﻿
+@model Tuple<List<V_GetBookInfoDto>, List<AuthorDto>,List<PublishingHouseDto>>
+
+@{
+    ViewData["title"] = "Admin Anasayfa";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card m-b-20">
+            <div class="card-block">
+                <p class="text-muted m-b-30 font-14">
+                    @using (Html.BeginForm("UploadExcel", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                    {
+                        <div class="form-horizontal">
+
+                            <div class="form-group">
+
+                                <div class="col-md-10">
+                                    <input type="file" id="fileUpload" name="fileUpload" class="" accept=".xlsx, .xls" />
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Upload" id="btnSubmit" class="btn btn-primary" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-dismissible alert-colored" role="alert">
+                            <div class="form-control-warning" style="color:orange">* Şablona uygun olarak çoklu kitap eklemesi yapabilirsiniz. &emsp;  <a style="color:white; border-bottom:solid 1px white;" href="/Admin/Home/DownloadBooklListFile/">Excel Şablonunu İndir</a></div>
+                        </div>
+                    }
+                </p>
+
+                <table id="datatable" class="table table-bordered bookDatatable">
+                    <thead>
+                        <tr>
+                            <th>Yazar Adı-Soyadı</th>
+                            <th>Kitap Adı</th>
+                            <th>YayınEvi Adı</th>
+                            <th>Fiyat</th>
+                            <th>-</th>
+                        </tr>
+                    </thead>
+
+
+                    <tbody>
+                        @foreach (var item in Model.Item1)
+                        {
+                            <tr>
+                                <td>@item.AuthorName</td>
+                                <td>@item.BookName</td>
+                                <td>@item.PublishingHouseName</td>
+                                <td>@item.BookPrice</td>
+                                <td>
+                                    <button onclick="deleteCourse(@item.BookId)" class="btn btn-outline-danger">Sil</button>
+                                    <button onclick="updateBookInfo(@item.BookId)" class="btn btn-secondary waves-effect m-l-15 pull-left focus-color btnBookUpdate" data-toggle="modal" data-target=".update-modal">Güncelle</button>
+                                </td>
+                            </tr>
+                        }
+                        
+                    </tbody>
+                </table>
+                <br />
+
+            </div>
+        </div>
+    </div> <!-- end col -->
+</div> <!-- end row -->
+
+<form id="infoUpdate" class="form-horizontal m-t-30" data-toggle="validator"> 
+
+    <div class="modal fade update-modal" data-toggle="validator" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content modal-background">
+                <div class="modal-header title-white">
+                    <h5 class="modal-title mt-0" id="myLargeModalLabel">Güncelleme</h5>
+                    <button type="button" class="close modal-close " data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body body-gray">
+                    <div class="row">
+                        <div class="form-group has-feedback col-lg-6">
+                            <label class="help-block-label" for="id">Kitap Adı</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" name="BookName" id="bookName" data-error="Zorunlu alan" required>
+                            </div>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group has-feedback col-lg-6">
+                            <label class="help-block-label" for="id">Kitap Fiyatı</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" name="BookPrice" id="bookPrice" data-error="Zorunlu alan" required>
+                            </div>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group has-feedback col-lg-6">
+                            <label for="inputBusiness" class="help-block-label">Yazar</label>
+                            <div class="col-sm-10">
+                                <select class="form-control select2" name="AuthorName" id="authorId" data-error="Zorunlu alan" required>
+
+                                    @{
+                                        if (Model.Item2 != null)
+                                        {
+                                            foreach (var item in Model.Item2)
+                                            {
+                                                    <option value=@item.AuthorId>@($"{item.AuthorName} {item.AuthorSurname}")</option>
+                                            }
+                                        }
+                                    }
+
+                                </select>
+                            </div>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group has-feedback col-lg-6">
+                            <label for="inputBusiness" class="help-block-label">YayınEvi</label>
+                            <div class="col-sm-10">
+                                <select class="form-control select2" name="PublishingHouseId" id="publishingHouseId" data-error="Zorunlu alan" required>
+                                    @{
+                                        if (Model.Item3 != null)
+                                        {
+                                            foreach (var item in Model.Item3)
+                                            {
+                                                    <option value=@item.PublishingHouseId>@item.PublishingHouseName</option>
+                                            }
+                                        }
+                                    }
+
+                                </select>
+                            </div>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <input type="hidden" id="bookInfoId" name="BookInfoId">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <a href="#" class="btn btn-success w-md waves-effect waves-light focus-color valForA btnUpdate" onclick="UptBookFull(@ViewBag.BookId)">Güncelle</a>
+                            <a href="#" class="btn btn-primary w-md waves-effect waves-light focus-color btnClearUpdate">Temizle</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<script>
+
+    function updateBookInfo(id) {
+
+        $.ajax({
+            type: "GET",
+            url: "/Admin/Home/UpdateBookInfo/" + id,
+            success: function (responseData) {
+                if (responseData) {
+                    $('#bookName').val(responseData.bookName);
+                    $('#bookPrice').val(responseData.bookPrice);
+
+                    $('#authorId').val(responseData.authorId);
+                    $('#publishingHouseId').val(responseData.publishingHouseId);
+
+                    $('#bookInfoId').val(responseData.bookId);
+                }
+            },
+            error: function () {
+                alert("Hata");
+            }
+        });
+    }
+
+    function UptBookFull(id) {
+
+        var b_name = $('#bookName').val();
+        var b_price = $('#bookPrice').val();
+        var a_id = $('#authorId').val();
+        var p_id = $('#publishingHouseId').val();
+        var b_id = $('#bookInfoId').val();
+
+
+        $.ajax({
+            type: "POST",
+            url: "/Admin/Home/UpdateBookFullInfo",
+            data: { BookId: b_id, BookName: b_name, BookPrice: b_price, PublishingHouseId:p_id,  AuthorId: a_id },
+            success: function (responseData) {
+                if (responseData) {
+                    $('.update-modal').modal('hide');
+                    window.location.reload();
+                }
+            },
+            error: function () {
+                alert("Hata");
+            }
+        });
+    }
+
+    function deleteCourse(id) {
+        swal({
+            title: "Silmek istediğinize emin misiniz?",
+            text: "Bu işlemi geri alamazsınız!",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#DD6B55",
+            confirmButtonText: "Evet, Silinsin",
+            cancelButtonText: "İptal",
+            closeOnConfirm: false,
+            closeOnCancel: false,
+            confirmButtonColor: '#f60e0e',
+        }, function (isConfirm) {
+            if (isConfirm) {
+                $.ajax({
+                    type: "POST",
+                    url: "/Admin/Home/DeleteBook/" + id,
+                    success: function (durum) {
+                        if (durum == true) {
+                            swal({
+                                title: "Silme İşlemi Başarılı",
+                                text: "-",
+                                type: "success",
+                                confirmButtonColor: '#304ffe',
+                            }, function (isConfirm) {
+                                if (isConfirm) {
+                                    // window.location.href = "/Admin/Home/Index/";
+                                    window.location.reload();
+                                }
+                            });
+                        }
+                        else {
+                            swal({
+                                title: "Silme işlemi yapılamadı!",
+                                text:  "-.",
+                                type: "error",
+                                confirmButtonColor: '#f60e0e',
+                            });
+                        }
+                    },
+                    error: function () {
+                        swal({
+                            title: "Silme işlemi yapılamadı!",
+                            text: "-",
+                            type: "error",
+                            confirmButtonColor: '#f60e0e',
+                        });
+                    }
+                });
+
+            } else {
+                swal({
+                    title: "Silme işlemi yapılamadı!",
+                    text: "-",
+                    type: "error",
+                    confirmButtonColor: '#f60e0e',
+                });
+            }
+        });
+
+    }
+
+
+</script>
